@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.19" systemVersion="16F2073" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HY4-66-S78">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.16"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--WhatFlower?-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WhatFlower" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides/>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="B8u-mm-ZIx">
+                                <rect key="frame" x="16" y="74" width="343" height="338"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="338" id="A8e-nI-wp7"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vlg-Vn-EDK">
+                                <rect key="frame" x="16" y="420" width="343" height="227"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.10196078431372549" green="0.73725490196078436" blue="0.61176470588235299" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="B8u-mm-ZIx" firstAttribute="top" secondItem="lV1-VM-b2D" secondAttribute="top" constant="10" id="1Ql-Aq-joQ"/>
+                            <constraint firstItem="lV1-VM-b2D" firstAttribute="trailing" secondItem="B8u-mm-ZIx" secondAttribute="trailing" constant="16" id="2A9-FK-72i"/>
+                            <constraint firstItem="lV1-VM-b2D" firstAttribute="trailing" secondItem="Vlg-Vn-EDK" secondAttribute="trailing" constant="16" id="Isg-pG-Rjd"/>
+                            <constraint firstItem="B8u-mm-ZIx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="KJz-af-GGo"/>
+                            <constraint firstItem="B8u-mm-ZIx" firstAttribute="leading" secondItem="lV1-VM-b2D" secondAttribute="leading" constant="16" id="L53-oI-sV3"/>
+                            <constraint firstItem="Vlg-Vn-EDK" firstAttribute="leading" secondItem="lV1-VM-b2D" secondAttribute="leading" constant="16" id="jLK-XI-VyN"/>
+                            <constraint firstItem="lV1-VM-b2D" firstAttribute="bottom" secondItem="Vlg-Vn-EDK" secondAttribute="bottom" constant="20" id="np2-3R-tGg"/>
+                            <constraint firstItem="Vlg-Vn-EDK" firstAttribute="top" secondItem="B8u-mm-ZIx" secondAttribute="bottom" constant="8" id="rcg-f0-YLf"/>
+                            <constraint firstItem="B8u-mm-ZIx" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="yXf-Yj-srJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="lV1-VM-b2D"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="WhatFlower?" id="1IS-2k-xGj">
+                        <barButtonItem key="rightBarButtonItem" systemItem="camera" id="cQv-CJ-lai">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="cameraTapped:" destination="BYZ-38-t0r" id="vVI-WR-11O"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="imageView" destination="B8u-mm-ZIx" id="QVn-Xh-TXC"/>
+                        <outlet property="infoLabel" destination="Vlg-Vn-EDK" id="oBy-m0-doi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="260" y="137.18140929535232"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="U0p-ub-iEa">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="HY4-66-S78" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="q1x-gz-OaD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.063072885209110433" green="0.48173778553299496" blue="0.40458891822773974" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="yev-5U-sQV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iv5-1G-94m" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-470" y="137"/>
+        </scene>
+    </scenes>
+</document>
