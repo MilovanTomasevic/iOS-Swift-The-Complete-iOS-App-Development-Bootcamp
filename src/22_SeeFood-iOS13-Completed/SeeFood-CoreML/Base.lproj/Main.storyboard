@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.19" systemVersion="16F2073" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="PVo-wR-m5S">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.16"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SeeFood_CoreML" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hotdogBackground" translatesAutoresizingMaskIntoConstraints="NO" id="9Ng-mW-f0V">
+                                <rect key="frame" x="67.5" y="269" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="a8U-9P-GLZ"/>
+                                    <constraint firstAttribute="height" constant="128" id="bM3-RV-KsL"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RUA-CU-fDV">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.36589302790287048" green="0.86297254009167901" blue="0.98560535907745361" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="RUA-CU-fDV" firstAttribute="top" secondItem="iaz-Dy-4y9" secondAttribute="top" id="5gF-66-vaK"/>
+                            <constraint firstItem="9Ng-mW-f0V" firstAttribute="centerX" secondItem="iaz-Dy-4y9" secondAttribute="centerX" id="DGl-s4-8pY"/>
+                            <constraint firstItem="iaz-Dy-4y9" firstAttribute="bottom" secondItem="RUA-CU-fDV" secondAttribute="bottom" id="FF0-dD-aKu"/>
+                            <constraint firstItem="9Ng-mW-f0V" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="MDj-de-7Pe"/>
+                            <constraint firstItem="RUA-CU-fDV" firstAttribute="leading" secondItem="iaz-Dy-4y9" secondAttribute="leading" id="iHi-A6-dPl"/>
+                            <constraint firstItem="iaz-Dy-4y9" firstAttribute="trailing" secondItem="RUA-CU-fDV" secondAttribute="trailing" id="k95-0U-UIV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="iaz-Dy-4y9"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="wqC-cM-JyS">
+                        <barButtonItem key="rightBarButtonItem" systemItem="camera" id="0kA-yv-IwT">
+                            <connections>
+                                <action selector="cameraTapped:" destination="BYZ-38-t0r" id="O85-kP-hqL"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="imageView" destination="RUA-CU-fDV" id="u5U-bx-F0D"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="476" y="137.18140929535232"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="V0a-bE-bXV">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="PVo-wR-m5S" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="KqY-cR-xas">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="QCk-YN-TCx"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pkq-0Q-Do9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-214" y="137"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="hotdogBackground" width="191" height="143"/>
+    </resources>
+</document>
