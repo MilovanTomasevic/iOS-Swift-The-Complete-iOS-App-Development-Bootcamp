@@ -3,7 +3,7 @@ From Beginner to iOS App Developer with Just One Course! Fully Updated with a Co
 
 ### Certifications
 
-- [Certificate](https://www.udemy.com/certificate/UC-058c5207-01b0-43e7-ab49-f9983e32b17e/) & [Certificate](https://nlb.udemy.com/certificate/UC-c8ba81d4-b3ad-4891-9d5a-45184a864679/)
+- [Certificate](https://www.udemy.com/certificate/UC-058c5207-01b0-43e7-ab49-f9983e32b17e/) & [Certificate](https://udemy.com/certificate/UC-c8ba81d4-b3ad-4891-9d5a-45184a864679/)
 
 ### Awknowledgements
 
